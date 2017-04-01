@@ -7,41 +7,42 @@ import javafx.fxml.FXML ;
 import javafx.fxml.FXMLLoader ;
 import javafx.fxml.Initializable ;
 import javafx.scene.Scene ;
+import javafx.scene.chart.BarChart ;
 import javafx.scene.control.Button ;
-import javafx.scene.control.Label;
+import javafx.scene.control.Label ;
 import javafx.scene.layout.AnchorPane ;
 import javafx.stage.Stage ;
 
-public class DashboardController implements Initializable {
+public class MyPerformanceController implements Initializable {
 
-    /** Elemento tipo (AnchorPane) referindo-se ao elemento raiz (background). */
+    /** Elemento do tipo (AnchorPane) referindo-se ao elemento raiz (background) no FXML. */
     @FXML
     private AnchorPane background ;
     
-    /** Elemento tipo (Label) referindo-se ao campo de texto (Dashboard). */
+    /** Elemento do tipo (Label) referindo-se ao campo de texto (Meu Desempenho) no FXML. */
     @FXML
     private Label tab ;
     
-    /** Elemento tipo (Button) referindo-se ao botao (Minhas Avaliacoes). */
+    /** Elemento do tipo (BarChart) referindo-se ao grafico (Meu Desempenho em ...) no FXML. */
     @FXML
-    private Button myTests ;
+    private BarChart performance ;
     
-    /** Elemento tipo (Button) referindo-se ao botao (Meu Desempenho). */
+    /** Elemento do tipo (Button) referindo-se ao botao (Voltar) no FXML. */
     @FXML
-    private Button myPerformance ;
+    private Button back ;
     
-	
-	
-    /** A classe (Initializable) possui metodo abstrato (initialize) que deve ser implementado,
+    
+    
+    /** A classe (Initializable) possui um metodo abstrato (initialize) que deve ser implementado, 
      *  por isso a tag @Override, significando a sobreescrita. */
     @Override
-    public void initialize (URL url, ResourceBundle rb) { }
+    public void initialize (URL url, ResourceBundle rb) { }    
     
-    /** Metodo para trocar para a cena (Scene) de (Meu Desempenho). */
+    /** Metodo para voltar para a cena (Scene) (Dashborard). */
     @FXML 
-    public void nextScreenMyPerformance () throws IOException {
+    public void backScreenDashboard () throws IOException {
         // carregar o elemento raiz (AnchorPane - neste caso) da proxima tela, a que sera aberta
-        AnchorPane nextRoot = FXMLLoader.load(getClass().getResource("MyPerformance.fxml")) ;
+        AnchorPane nextRoot = FXMLLoader.load(getClass().getResource("Dashboard.fxml")) ;
         
         // criar a proxima cena (Scene) , passando para o construtor o elemento raiz que foi criado anteriormente
         Scene nextScene = new Scene (nextRoot) ;

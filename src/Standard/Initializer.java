@@ -9,7 +9,7 @@ import javafx.stage.Stage ;
 public class Initializer extends Application {
     
     
-    public void main (String[] args) {
+    public static void main (String[] args) {
         launch (args) ;
     }
 
