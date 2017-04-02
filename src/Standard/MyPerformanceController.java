@@ -15,19 +15,19 @@ import javafx.stage.Stage ;
 
 public class MyPerformanceController implements Initializable {
 
-    /** Elemento do tipo (AnchorPane) referindo-se ao elemento raiz (background). */
+    /** Elemento tipo (AnchorPane) referindo-se ao elemento raiz (background). */
     @FXML
     private AnchorPane background ;
     
-    /** Elemento do tipo (Label) referindo-se ao campo de texto (Meu Desempenho). */
+    /** Elemento tipo (Label) referindo-se ao rotulo (Meu Desempenho). */
     @FXML
     private Label tab ;
     
-    /** Elemento do tipo (BarChart) referindo-se ao grafico (Meu Desempenho em ...). */
+    /** Elemento tipo (BarChart) referindo-se ao grafico (Meu Desempenho em ...). */
     @FXML
     private BarChart performance ;
     
-    /** Elemento do tipo (Button) referindo-se ao botao (Voltar). */
+    /** Elemento tipo (Button) referindo-se ao botao (Voltar). */
     @FXML
     private Button back ;
     
@@ -36,9 +36,9 @@ public class MyPerformanceController implements Initializable {
     /** A classe (Initializable) possui um metodo abstrato (initialize) que deve ser implementado, 
      *  por isso a tag @Override, significando a sobreescrita. */
     @Override
-    public void initialize (URL url, ResourceBundle rb) { }    
+    public void initialize (URL url, ResourceBundle rb) { }
     
-    /** Metodo para voltar para a cena (Scene) (Dashborard). */
+    /** Metodo para voltar para a cena (Scene) (Dashboard). */
     @FXML 
     public void backScreenDashboard () throws IOException {
         // carregar o elemento raiz (AnchorPane - neste caso) da proxima tela, a que sera aberta

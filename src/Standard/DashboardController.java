@@ -18,7 +18,7 @@ public class DashboardController implements Initializable {
     @FXML
     private AnchorPane background ;
     
-    /** Elemento tipo (Label) referindo-se ao campo de texto (Dashboard). */
+    /** Elemento tipo (Label) referindo-se ao rotulo (Dashboard). */
     @FXML
     private Label tab ;
     
@@ -30,8 +30,8 @@ public class DashboardController implements Initializable {
     @FXML
     private Button myPerformance ;
     
-	
-	
+    
+    
     /** A classe (Initializable) possui metodo abstrato (initialize) que deve ser implementado,
      *  por isso a tag @Override, significando a sobreescrita. */
     @Override
