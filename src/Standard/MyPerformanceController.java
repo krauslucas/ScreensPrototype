@@ -15,19 +15,19 @@ import javafx.stage.Stage ;
 
 public class MyPerformanceController implements Initializable {
 
-    /** Elemento do tipo (AnchorPane) referindo-se ao elemento raiz (background) no FXML. */
+    /** Elemento do tipo (AnchorPane) referindo-se ao elemento raiz (background). */
     @FXML
     private AnchorPane background ;
     
-    /** Elemento do tipo (Label) referindo-se ao campo de texto (Meu Desempenho) no FXML. */
+    /** Elemento do tipo (Label) referindo-se ao campo de texto (Meu Desempenho). */
     @FXML
     private Label tab ;
     
-    /** Elemento do tipo (BarChart) referindo-se ao grafico (Meu Desempenho em ...) no FXML. */
+    /** Elemento do tipo (BarChart) referindo-se ao grafico (Meu Desempenho em ...). */
     @FXML
     private BarChart performance ;
     
-    /** Elemento do tipo (Button) referindo-se ao botao (Voltar) no FXML. */
+    /** Elemento do tipo (Button) referindo-se ao botao (Voltar). */
     @FXML
     private Button back ;
     

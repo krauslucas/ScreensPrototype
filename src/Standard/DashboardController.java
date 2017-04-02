@@ -55,4 +55,23 @@ public class DashboardController implements Initializable {
         // atribuir a proxima cena (Scene) ao palco (Stage)
         appStage.setScene(nextScene) ;
     }
+    
+    /** Metodo para trocar para a cena (Scene) de (Minhas Avaliacoes). */
+    @FXML 
+    public void nextScreenMyTests () throws IOException {
+        // carregar o elemento raiz (AnchorPane - neste caso) da proxima tela, a que sera aberta
+        AnchorPane nextRoot = FXMLLoader.load(getClass().getResource("MyTests.fxml")) ;
+        
+        // criar a proxima cena (Scene) , passando para o construtor o elemento raiz que foi criado anteriormente
+        Scene nextScene = new Scene (nextRoot) ;
+        
+        // obter a cena (Scene) atual a partir do elemento raiz da tela que esta aberta
+        Scene currentScene = background.getScene() ;
+        
+        // obter o palco (Stage) da aplicacao a partir da cena atual
+        Stage appStage = (Stage) currentScene.getWindow() ;
+        
+        // atribuir a proxima cena (Scene) ao palco (Stage)
+        appStage.setScene(nextScene) ;
+    }
 }
