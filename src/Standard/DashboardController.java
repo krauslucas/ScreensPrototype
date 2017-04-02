@@ -14,19 +14,19 @@ import javafx.stage.Stage ;
 
 public class DashboardController implements Initializable {
 
-    /** Elemento tipo (AnchorPane) referindo-se ao elemento raiz (background). */
+    /** Elemento raiz (background). */
     @FXML
     private AnchorPane background ;
     
-    /** Elemento tipo (Label) referindo-se ao rotulo (Dashboard). */
+    /** Rotulo (Dashboard). */
     @FXML
     private Label tab ;
     
-    /** Elemento tipo (Button) referindo-se ao botao (Minhas Avaliacoes). */
+    /** Botao (Minhas Avaliacoes). */
     @FXML
     private Button myTests ;
     
-    /** Elemento tipo (Button) referindo-se ao botao (Meu Desempenho). */
+    /** Botao (Meu Desempenho). */
     @FXML
     private Button myPerformance ;
     

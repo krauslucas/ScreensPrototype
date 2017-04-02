@@ -15,27 +15,27 @@ import javafx.stage.Stage ;
 
 public class MyTestsController implements Initializable {
 
-    /** Elemento tipo (AnchorPane) referindo-se ao elemento raiz (background). */
+    /** Elemento raiz (background). */
     @FXML
     private AnchorPane background ;
     
-    /** Elemento tipo (Label) referindo-se ao rotulo (Meu Desempenho). */
+    /** Rotulo (Meu Desempenho). */
     @FXML
     private Label tab ;
     
-    /** Elemento tipo (Button) referindo-se ao botao (Informar nota). */
+    /** Botao (Informar nota). */
     @FXML
     private Button reportNote ;
     
-    /** Elemento tipo (Button) referindo-se ao botao (Adicionar nova avaliacao). */
+    /** Botao (Adicionar nova avaliacao). */
     @FXML
     private Button addNewTest ;
     
-    /** Elemento tipo (Button) referindo-se ao botao (Voltar). */
+    /** Botao (Voltar). */
     @FXML
     private Button back ;
     
-    /** Elemento tipo (TableView) referindo-se a tabela (Minhas Avaliacoes). */
+    /** Tabela (Minhas Avaliacoes). */
     @FXML
     private TableView myTests ;
     
@@ -65,11 +65,30 @@ public class MyTestsController implements Initializable {
         appStage.setScene(nextScene) ;
     }
     
-    /** Metodo para voltar para a cena (Scene) (Dashborard). */
+    /** Metodo para voltar para a cena (Scene) (Informar Nota). */
     @FXML
     public void reportNote () throws IOException {
         // carregar o elemento raiz (AnchorPane - neste caso) da proxima tela, a que sera aberta
         AnchorPane nextRoot = FXMLLoader.load(getClass().getResource("ReportNote.fxml")) ;
+        
+        // criar a proxima cena (Scene) , passando para o construtor o elemento raiz que foi criado anteriormente
+        Scene nextScene = new Scene (nextRoot) ;
+        
+        // obter a cena (Scene) atual a partir do elemento raiz da tela que esta aberta
+        Scene currentScene = background.getScene() ;
+        
+        // obter o palco (Stage) da aplicacao a partir da cena atual
+        Stage appStage = (Stage) currentScene.getWindow() ;
+        
+        // atribuir a proxima cena (Scene) ao palco (Stage)
+        appStage.setScene(nextScene) ;
+    }
+    
+    /** Metodo para voltar para a cena (Scene) (Informar Nota). */
+    @FXML
+    public void addNewTest () throws IOException {
+        // carregar o elemento raiz (AnchorPane - neste caso) da proxima tela, a que sera aberta
+        AnchorPane nextRoot = FXMLLoader.load(getClass().getResource("AddNewTest.fxml")) ;
         
         // criar a proxima cena (Scene) , passando para o construtor o elemento raiz que foi criado anteriormente
         Scene nextScene = new Scene (nextRoot) ;

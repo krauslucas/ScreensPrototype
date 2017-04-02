@@ -1,6 +1,6 @@
 package Standard ;
 
-import java.io.IOException ;
+import java.io.IOException;
 import java.net.URL ;
 import java.util.ResourceBundle ;
 import javafx.fxml.FXML ;
@@ -9,39 +9,52 @@ import javafx.fxml.Initializable ;
 import javafx.scene.Scene ;
 import javafx.scene.control.Button ;
 import javafx.scene.control.Label ;
+import javafx.scene.control.SplitMenuButton ;
 import javafx.scene.control.TextField ;
 import javafx.scene.layout.AnchorPane ;
 import javafx.stage.Stage ;
 
-public class ReportNoteController implements Initializable {
+public class AddNewTestController implements Initializable {
 
     /** Elemento raiz (background). */
     @FXML
     private AnchorPane background ;
     
-    /** ERotulo (Informar Nota). */
+    /** Rotulo (Adicionar nova avaliacao). */
     @FXML
     private Label tab ;
     
-    /** Rotulo (Nome: Prova Java). */
+    /** Rotulo (Nome). */
     @FXML
     private Label name ;
     
-    /** ERotulo (Disciplina: Programcao Orientada a Objetos). */
+    /** Campo de texto (Nome), entrada do usuario. */
+    @FXML
+    private TextField nameField ;
+    
+    /** Rotulo (Peso). */
+    @FXML
+    private Label weight ;
+    
+    /** Campo de texto (Peso), entrada do usuario) */
+    @FXML
+    private TextField weightField ;
+    
+    /** Rotulo (Disciplina) .*/
     @FXML
     private Label discipline ;
     
-    /** Rotulo (Media: M1). */
+    /** Menu (Disciplina) .*/
+    @FXML
+    private SplitMenuButton disciplineMenu ;
+    
+    /** Rotulo (Medias) .*/
     @FXML
     private Label average ;
     
-    /** Rotulo (Minha Nota). */
+    /** Menu (Medias) .*/
     @FXML
-    private Label myNote ;
-    
-    /** Campo de texto (Minha nota), entrada do usuario. */
-    @FXML
-    private TextField note ;
+    private SplitMenuButton averageMenu ;
     
     /** Botao (Voltar). */
     @FXML
@@ -79,7 +92,7 @@ public class ReportNoteController implements Initializable {
     
     /** Metodo para salvar os dadose em seguida voltar para a cena (Scene) (Minhas Avaliacoes). */
     @FXML
-    public void saveNote () throws IOException {
+    public void saveNewTest () throws IOException {
         // salvar os dados e em seguida voltar para a tela (Minhas Avaliacoes)
         backScreenMyTests () ;
     }

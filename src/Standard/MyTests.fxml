@@ -10,7 +10,7 @@
    <children>
       <Label fx:id="tab" layoutX="25.0" layoutY="15.0" scaleX="1.25" scaleY="1.25" text="Minhas Avaliações" />
       <Button fx:id="reportNote" layoutX="200.0" layoutY="60.0" mnemonicParsing="false" onAction="#reportNote" prefWidth="120.0" scaleX="1.25" scaleY="1.25" text="Informar nota" />
-      <Button fx:id="addNewTest" layoutX="378.0" layoutY="60.0" mnemonicParsing="false" prefWidth="160.0" scaleX="1.25" scaleY="1.25" text="Adicionar nova avaliação" />
+      <Button fx:id="addNewTest" layoutX="378.0" layoutY="60.0" mnemonicParsing="false" onAction="#addNewTest" prefWidth="160.0" scaleX="1.25" scaleY="1.25" text="Adicionar nova avaliação" />
       <Button fx:id="back" layoutX="40.0" layoutY="340.0" mnemonicParsing="false" onAction="#backScreenDashboard" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Voltar" />
       <TableView fx:id="myTests" layoutX="33.0" layoutY="105.0" prefHeight="220.0" prefWidth="525.0">
         <columns>

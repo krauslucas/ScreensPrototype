@@ -7,7 +7,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Standard.ReportNoteController">
    <children>
-      <Label fx:id="tab" layoutX="22.0" layoutY="15.0" scaleX="1.25" scaleY="1.25" text="Informar nota" />
+      <Label fx:id="tab" layoutX="22.0" layoutY="15.0" scaleX="1.25" scaleY="1.25" text="Informar Nota" />
       <Label fx:id="name" layoutX="40.0" layoutY="70.0" scaleX="1.25" scaleY="1.25" text="Nome: Prova Java" />
       <Label fx:id="discipline" layoutX="59.0" layoutY="96.0" scaleX="1.25" scaleY="1.25" text="Disciplina: Programação Orientada a Objetos" />
       <Label fx:id="average" layoutX="37.0" layoutY="120.0" scaleX="1.25" scaleY="1.25" text="Média: M1" />
