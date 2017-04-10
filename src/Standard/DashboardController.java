@@ -4,12 +4,9 @@ import java.io.IOException ;
 import java.net.URL ;
 import java.util.ResourceBundle ;
 import javafx.fxml.FXML ;
-import javafx.fxml.FXMLLoader ;
-import javafx.scene.Scene ;
 import javafx.scene.control.Button ;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane ;
-import javafx.stage.Stage ;
 
 public class DashboardController extends UserInterface {
 
@@ -44,38 +41,12 @@ public class DashboardController extends UserInterface {
     /** Metodo para trocar para a cena (Scene) de (Meu Desempenho). */
     @FXML 
     public void nextScreenMyPerformance () throws IOException {
-        // carregar o elemento raiz (AnchorPane - neste caso) da proxima tela, a que sera aberta
-        AnchorPane nextRoot = FXMLLoader.load(getClass().getResource("MyPerformance.fxml")) ;
-        
-        // criar a proxima cena (Scene) , passando para o construtor o elemento raiz que foi criado anteriormente
-        Scene nextScene = new Scene (nextRoot) ;
-        
-        // obter a cena (Scene) atual a partir do elemento raiz da tela que esta aberta
-        Scene currentScene = background.getScene() ;
-        
-        // obter o palco (Stage) da aplicacao a partir da cena atual
-        Stage appStage = (Stage) currentScene.getWindow() ;
-        
-        // atribuir a proxima cena (Scene) ao palco (Stage)
-        appStage.setScene(nextScene) ;
+        WindowManager.getInstance().openWindow(new MyPerformanceController()) ;
     }
     
     /** Metodo para trocar para a cena (Scene) de (Minhas Avaliacoes). */
     @FXML 
     public void nextScreenMyTests () throws IOException {
-        // carregar o elemento raiz (AnchorPane - neste caso) da proxima tela, a que sera aberta
-        AnchorPane nextRoot = FXMLLoader.load(getClass().getResource("MyTests.fxml")) ;
-        
-        // criar a proxima cena (Scene) , passando para o construtor o elemento raiz que foi criado anteriormente
-        Scene nextScene = new Scene (nextRoot) ;
-        
-        // obter a cena (Scene) atual a partir do elemento raiz da tela que esta aberta
-        Scene currentScene = background.getScene() ;
-        
-        // obter o palco (Stage) da aplicacao a partir da cena atual
-        Stage appStage = (Stage) currentScene.getWindow() ;
-        
-        // atribuir a proxima cena (Scene) ao palco (Stage)
-        appStage.setScene(nextScene) ;
+        WindowManager.getInstance().openWindow(new MyTestsController()) ;
     }
 }

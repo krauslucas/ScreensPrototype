@@ -6,20 +6,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" fx:id="background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Standard.MyTestsController">
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Standard.MyTestsController">
    <children>
       <Label fx:id="tab" layoutX="25.0" layoutY="15.0" scaleX="1.25" scaleY="1.25" text="Minhas Avaliações" />
-      <Button fx:id="reportNote" layoutX="200.0" layoutY="60.0" mnemonicParsing="false" onAction="#reportNote" prefWidth="120.0" scaleX="1.25" scaleY="1.25" text="Informar nota" />
-      <Button fx:id="addNewTest" layoutX="378.0" layoutY="60.0" mnemonicParsing="false" onAction="#addNewTest" prefWidth="160.0" scaleX="1.25" scaleY="1.25" text="Adicionar nova avaliação" />
-      <Button fx:id="back" layoutX="40.0" layoutY="340.0" mnemonicParsing="false" onAction="#backScreenDashboard" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Voltar" />
-      <TableView fx:id="myTests" layoutX="33.0" layoutY="105.0" prefHeight="220.0" prefWidth="525.0">
+      <Button fx:id="addNewTest" layoutX="593.0" layoutY="60.0" mnemonicParsing="false" onAction="#addNewTest" prefWidth="160.0" scaleX="1.25" scaleY="1.25" text="Adicionar nova avaliação" />
+      <Button fx:id="back" layoutX="40.0" layoutY="540.0" mnemonicParsing="false" onAction="#backScreenDashboard" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Voltar" />
+      <TableView fx:id="myTests" layoutX="33.0" layoutY="110.0" prefHeight="400.0" prefWidth="740.0">
         <columns>
-          <TableColumn prefWidth="144.0" text="Nome" />
-          <TableColumn prefWidth="118.0" text="Disciplina" />
-          <TableColumn prefWidth="63.0" text="Média" />
-          <TableColumn prefWidth="64.0" text="Peso" />
-          <TableColumn prefWidth="135.0" text="Minha nota" />
+          <TableColumn prefWidth="260.0" text="Nome" />
+          <TableColumn prefWidth="260.0" text="Disciplina" />
+          <TableColumn prefWidth="70.0" text="Média" />
+          <TableColumn prefWidth="70.0" text="Peso" />
+          <TableColumn text="Minha nota" />
         </columns>
       </TableView>
+      <Button fx:id="reportNote" layoutX="363.0" layoutY="60.0" mnemonicParsing="false" onAction="#reportNote" prefWidth="120.0" scaleX="1.25" scaleY="1.25" text="Informar nota" />
    </children>
 </AnchorPane>

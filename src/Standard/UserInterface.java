@@ -11,7 +11,7 @@ import javafx.scene.layout.Pane ;
 public abstract class UserInterface implements Initializable {
     
     private Scene myScene ;
-    private String fxmlPath ;
+    final private String fxmlPath ;
     
     protected UserInterface (String fxmlPath) {
         this.fxmlPath = fxmlPath ;
@@ -23,8 +23,8 @@ public abstract class UserInterface implements Initializable {
         }
         
         try {
-            Pane elementoPrincipal = FXMLLoader.load(getClass().getResource(fxmlPath)) ;
-            this.myScene = new Scene (elementoPrincipal, 600, 400) ;
+            Pane rootElement = FXMLLoader.load(getClass().getResource(fxmlPath)) ;
+            this.myScene = new Scene (rootElement) ;
         } catch (IOException ex) {
             Logger.getLogger(UserInterface.class.getName()).log(Level.SEVERE, null, ex) ;
         }

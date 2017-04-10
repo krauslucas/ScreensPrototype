@@ -19,8 +19,8 @@ public class WindowManager {
     }
     
     private Stage appStage ;
-    private Stack<UserInterface> stackReturn ;
     private UserInterface actualWindow ;
+    final private Stack<UserInterface> stackReturn ;
     
     public void initalizeStage (Stage appStage, UserInterface firstInterface) {
         this.appStage = appStage ;
@@ -37,13 +37,15 @@ public class WindowManager {
         this.stackReturn.push(this.actualWindow) ;
         this.getStage().setScene(newWindow.getScene()) ;
         this.actualWindow = newWindow ;
+        System.out.println("ABRIU " + this.stackReturn.size());
     }
     
-    public void backWindow() {
+    public void backWindow () {
         if (!this.stackReturn.empty()) {
             UserInterface previous = this.stackReturn.pop() ;
             this.getStage().setScene(previous.getScene()) ;
             this.actualWindow = previous ;
+            System.out.println("FECHOU " + this.stackReturn.size());
             return ;
         }
         System.err.println ("A pilha de retorno vazia") ;
