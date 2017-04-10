@@ -17,3 +17,4 @@
       <Button fx:id="save" layoutX="690.0" layoutY="540.0" mnemonicParsing="false" onAction="#saveNote" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Salvar" />
    </children>
 </AnchorPane>
+

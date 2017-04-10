@@ -21,3 +21,4 @@ public class Initializer extends Application {
         mainStage.setTitle("Screens Prototype") ;
     }
 }
+

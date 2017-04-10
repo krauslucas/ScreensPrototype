@@ -78,10 +78,11 @@ public class AddNewTestController extends UserInterface {
         WindowManager.getInstance().backWindow() ;
     }
     
-    /** Metodo para salvar os dadose em seguida voltar para a cena (Scene) (Minhas Avaliacoes). */
+    /** Metodo para salvar os dados e em seguida voltar para a cena (Scene) (Minhas Avaliacoes). */
     @FXML
     public void saveNewTest () throws IOException {
-        // salvar os dados e em seguida voltar para a tela (Minhas Avaliacoes)
-        backScreenMyTests () ;
+        // a ser implementado ainda
+        backScreenMyTests() ;
     }
 }
+

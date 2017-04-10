@@ -23,3 +23,4 @@
       <Button fx:id="reportNote" layoutX="363.0" layoutY="60.0" mnemonicParsing="false" onAction="#reportNote" prefWidth="120.0" scaleX="1.25" scaleY="1.25" text="Informar nota" />
    </children>
 </AnchorPane>
+

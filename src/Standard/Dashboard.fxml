@@ -11,3 +11,4 @@
       <Button fx:id="myPerformance" layoutX="335.0" layoutY="400.0" mnemonicParsing="false" onAction="#nextScreenMyPerformance" prefWidth="130.0" scaleX="1.5" scaleY="1.5" text="Meu Desempenho" />
    </children>
 </AnchorPane>
+

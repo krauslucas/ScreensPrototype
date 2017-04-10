@@ -41,12 +41,13 @@ public class DashboardController extends UserInterface {
     /** Metodo para trocar para a cena (Scene) de (Meu Desempenho). */
     @FXML 
     public void nextScreenMyPerformance () throws IOException {
-        WindowManager.getInstance().openWindow(new MyPerformanceController()) ;
+        WindowManager.getInstance().changeWindow(new MyPerformanceController()) ;
     }
     
     /** Metodo para trocar para a cena (Scene) de (Minhas Avaliacoes). */
     @FXML 
     public void nextScreenMyTests () throws IOException {
-        WindowManager.getInstance().openWindow(new MyTestsController()) ;
+        WindowManager.getInstance().changeWindow(new MyTestsController()) ;
     }
 }
+

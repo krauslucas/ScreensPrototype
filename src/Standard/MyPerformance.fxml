@@ -21,3 +21,4 @@
       <Button fx:id="back" layoutX="40.0" layoutY="540.0" mnemonicParsing="false" onAction="#backScreenDashboard" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Voltar" />
    </children>
 </AnchorPane>
+

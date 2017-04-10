@@ -45,3 +45,4 @@ public class MyPerformanceController extends UserInterface {
         WindowManager.getInstance().backWindow() ;
     }
 }
+

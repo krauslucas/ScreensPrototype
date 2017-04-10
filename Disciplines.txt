@@ -1,0 +1,62 @@
+[1] Álgebra
+[1] Algoritmos e Programação
+[1] Ética em Informática
+[1] Iniciação Técnico-Científica
+[1] Introdução a Engenharia de Computação
+[1] Introdução a Física
+[1] Introdução ao Cálculo
+[1] Matematica Computacional
+[2] Álgebra
+[2] Algoritmos e Programação
+[2] Cálculo
+[2] Circuitos Digitais
+[2] Desenho Técnico
+[2] Física Geral
+[3] Arquitetura de Computadores
+[3] Cálculo
+[3] Estruturas de Dados
+[3] Física
+[3] Programação Orientada a Objetos
+[3] Química
+[4] Análise de Circuitos Elétricos
+[4] Arquitetura de Computadores
+[4] Cálculo
+[4] Óptica e Física para Semicondutores
+[4] Programação Orientada a Objetos
+[4] Química
+[4] Resistência dos Materiais
+[5] Banco de Dados
+[5] Eletrônica Básica
+[5] Engenharia de Software
+[5] Interface Humano-Computador
+[5] Matemática Aplicada à Engenharia
+[5] Probabilidade e Estatística
+[5] Sistemas Operacionais
+[6] Análise e Controle de Processos
+[6] Cálculo Numérico
+[6] Eletrônica Aplicada
+[6] Engenharia de Software
+[6] Linguagens Formais
+[6] Redes de Computadores
+[7] Controle Lógico de Sistemas
+[7] Engenharia Econômica
+[7] Grafos
+[7] Microcontroladores
+[7] Projetos de Sistemas Digitais
+[7] Redes de Computadores
+[8] Comunicação Digital
+[8] Inteligência Artificial
+[8] Processador Digital de Sinais
+[8] Projeto de Sistemas Embarcados
+[8] Sistemas em Tempo Real
+[8] Sistemas Robóticos
+[8] Trabalho Técnico-Científico de Conclusão de Curso
+[9] Gerência de Projetos
+[9] Simulação Discreta
+[9] Tópicos Especiais em Engenharia de Computação
+[9] Tópicos Especiais em Hardware
+[9] Trabalho Técnico-Científico de Conclusão de Curso
+[10] Administração de Negócios de Base Tecnológica
+[10] Sistemas Distribuídos
+[10] Tópicos Especiais em Integração Software Hardware
+[10] Trabalho Técnico-Científico de Conclusão de Curso

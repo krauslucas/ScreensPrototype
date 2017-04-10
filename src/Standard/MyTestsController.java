@@ -56,12 +56,13 @@ public class MyTestsController extends UserInterface {
     /** Metodo para voltar para a cena (Scene) (Informar Nota). */
     @FXML
     public void reportNote () throws IOException {
-        WindowManager.getInstance().openWindow(new ReportNoteController()) ;
+        WindowManager.getInstance().changeWindow(new ReportNoteController()) ;
     }
     
     /** Metodo para voltar para a cena (Scene) (Informar Nota). */
     @FXML
     public void addNewTest () throws IOException {
-        WindowManager.getInstance().openWindow(new AddNewTestController()) ;
+        WindowManager.getInstance().changeWindow(new AddNewTestController()) ;
     }
 }
+
