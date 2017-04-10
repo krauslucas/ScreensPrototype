@@ -8,7 +8,7 @@ import javafx.fxml.Initializable ;
 import javafx.scene.Scene ;
 import javafx.scene.layout.Pane ;
 
-public class UserInterface implements Initializable {
+public abstract class UserInterface implements Initializable {
     
     private Scene myScene ;
     private String fxmlPath ;

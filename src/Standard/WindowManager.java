@@ -19,55 +19,52 @@ public class WindowManager {
     }
     
     private Stage appStage ;
-    private Stack<InterfaceUsuario> stackReturn ;
-    private InterfaceUsuario actualWindow ;
+    private Stack<UserInterface> stackReturn ;
+    private UserInterface actualWindow ;
     
-    public void inicializaPalco(Stage p, InterfaceUsuario interfaceInicial){
-        this.appStage = p;
-        this.actualWindow = interfaceInicial;
-        this.appStage.setScene(interfaceInicial.obterCena());
-        this.appStage.show();
+    public void initalizeStage (Stage appStage, UserInterface firstInterface) {
+        this.appStage = appStage ;
+        this.actualWindow = firstInterface ;
+        this.appStage.setScene(firstInterface.getScene()) ;
+        this.appStage.show() ;
     }
     
-    private Stage getPalco(){
-        return this.appStage;
+    private Stage getStage () {
+        return this.appStage ;
     }
     
-    public void abreJanela(InterfaceUsuario novaJanela) {
-        this.stackReturn.push(this.actualWindow);
-        this.getPalco().setScene(novaJanela.obterCena());
-        this.actualWindow = novaJanela;
-        System.out.println(this.stackReturn.size());
+    public void openWindow (UserInterface newWindow) {
+        this.stackReturn.push(this.actualWindow) ;
+        this.getStage().setScene(newWindow.getScene()) ;
+        this.actualWindow = newWindow ;
     }
     
-    public void voltar() {
-        if(!this.stackReturn.empty()){
-            InterfaceUsuario anterior = this.stackReturn.pop();
-            this.getPalco().setScene(anterior.obterCena());
-            this.actualWindow = anterior;
-            return;
+    public void backWindow() {
+        if (!this.stackReturn.empty()) {
+            UserInterface previous = this.stackReturn.pop() ;
+            this.getStage().setScene(previous.getScene()) ;
+            this.actualWindow = previous ;
+            return ;
         }
-        System.err.println("A pilha de retorno vazia");
+        System.err.println ("A pilha de retorno vazia") ;
     }
     
-    public void voltar(int quantasTelas) {
-        if(quantasTelas <= this.stackReturn.size()){
-            while(quantasTelas > 1){
-                this.stackReturn.pop();
-                quantasTelas--;
+    public void backWindow (int nWindows) {
+        if (nWindows <= this.stackReturn.size()) {
+            while (nWindows > 1) {
+                this.stackReturn.pop() ;
+                nWindows-- ;
             }
-            InterfaceUsuario anterior = this.stackReturn.pop();
-            this.getPalco().setScene(anterior.obterCena());   
-            this.actualWindow = anterior;
-            return;
+            UserInterface previous = this.stackReturn.pop() ;
+            this.getStage().setScene(previous.getScene()) ;
+            this.actualWindow = previous ;
+            return ;
         }
-        System.err.println("Numero de retornos maior que o tamanho da pilha");       
+        System.err.println ("Numero de retornos maior que o tamanho da pilha") ;
     }
     
-    
-    public void abreEmPopup(InterfaceUsuario novaJanela){
-        Stage popUp = new Stage();
-        popUp.setScene(novaJanela.obterCena());
+    public void showPopUp (UserInterface newWindow) {
+        Stage popUp = new Stage() ;
+        popUp.setScene(newWindow.getScene()) ;
     }
-    
 }

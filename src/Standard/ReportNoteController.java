@@ -5,7 +5,6 @@ import java.net.URL ;
 import java.util.ResourceBundle ;
 import javafx.fxml.FXML ;
 import javafx.fxml.FXMLLoader ;
-import javafx.fxml.Initializable ;
 import javafx.scene.Scene ;
 import javafx.scene.control.Button ;
 import javafx.scene.control.Label ;
@@ -13,7 +12,7 @@ import javafx.scene.control.TextField ;
 import javafx.scene.layout.AnchorPane ;
 import javafx.stage.Stage ;
 
-public class ReportNoteController implements Initializable {
+public class ReportNoteController extends UserInterface {
 
     /** Elemento raiz (background). */
     @FXML
@@ -52,6 +51,11 @@ public class ReportNoteController implements Initializable {
     private Button save ;
     
     
+    
+    /** Passa para a classe pai uma string com o nome do arquivo FXML */
+    public ReportNoteController () {
+        super ("ReportNote.fxml") ;
+    }
     
     /** A classe (Initializable) possui um metodo abstrato (initialize) que deve ser implementado, 
      *  por isso a tag @Override, significando a sobreescrita. */
