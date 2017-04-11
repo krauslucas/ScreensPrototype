@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" fx:id="background" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Standard.AddNewTestController">
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Standard.AddNewTestController">
    <children>
       <Label fx:id="tab" layoutX="30.0" layoutY="15.0" scaleX="1.25" scaleY="1.25" text="Adicionar Nova Avaliação" />
       <Label fx:id="name" layoutX="51.0" layoutY="90.0" scaleX="1.5" scaleY="1.5" text="Nome" />
@@ -15,21 +15,10 @@
       <Label fx:id="weight" layoutX="48.0" layoutY="180.0" scaleX="1.5" scaleY="1.5" text="Peso" />
       <TextField fx:id="weightField" layoutX="42.0" layoutY="210.0" prefWidth="100.0" />
       <Label fx:id="discipline" layoutX="54.0" layoutY="270.0" scaleX="1.5" scaleY="1.5" text="Disciplina" />
-      <SplitMenuButton fx:id="disciplineMenu" layoutX="42.0" layoutY="300.0" mnemonicParsing="false" prefWidth="400.0" textFill="#a1a1a1">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Disciplina 1" />
-        </items>
-      </SplitMenuButton>
+      <ChoiceBox fx:id="disciplineMenu" layoutX="41.0" layoutY="300.0" prefWidth="400.0" />
       <Label layoutX="51.0" layoutY="360.0" scaleX="1.5" scaleY="1.5" text="Média" />
-      <SplitMenuButton fx:id="averageMenu" layoutX="42.0" layoutY="390.0" mnemonicParsing="false" prefWidth="100.0">
-         <items>
-            <MenuItem mnemonicParsing="false" text="M1" />
-            <MenuItem mnemonicParsing="false" text="M2" />
-            <MenuItem mnemonicParsing="false" text="M3" />
-         </items>
-      </SplitMenuButton>
+      <ComboBox fx:id="averageMenu" layoutX="42.0" layoutY="390.0" prefWidth="100.0" />
       <Button fx:id="back" layoutX="40.0" layoutY="540.0" mnemonicParsing="false" onAction="#backScreenMyTests" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Voltar" />
       <Button fx:id="save" layoutX="690.0" layoutY="540.0" mnemonicParsing="false" onAction="#saveNewTest" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Salvar" />
    </children>
 </AnchorPane>
-

@@ -41,7 +41,7 @@ public class MyPerformanceController extends UserInterface {
     
     /** Metodo para voltar para a cena (Scene) (Dashboard). */
     @FXML 
-    public void backScreenDashboard () throws IOException {
+    public void backDashboard () throws IOException {
         WindowManager.getInstance().backWindow() ;
     }
 }

@@ -9,7 +9,7 @@ import javafx.scene.control.Label ;
 import javafx.scene.control.TableView ;
 import javafx.scene.layout.AnchorPane ;
 
-public class MyTestsController extends UserInterface {
+public class MyEvaluationsController extends UserInterface {
 
     /** Elemento raiz (background). */
     @FXML
@@ -38,8 +38,8 @@ public class MyTestsController extends UserInterface {
     
     
     /** Passa para a classe pai uma string com o nome do arquivo FXML */
-    public MyTestsController () {
-        super ("MyTests.fxml") ;
+    public MyEvaluationsController () {
+        super ("MyEvaluations.fxml") ;
     }
     
     /** A classe (Initializable) possui um metodo abstrato (initialize) que deve ser implementado, 
@@ -49,7 +49,7 @@ public class MyTestsController extends UserInterface {
     
     /** Metodo para voltar para a cena (Scene) (Dashboard). */
     @FXML
-    public void backScreenDashboard () throws IOException {
+    public void backDashboard () throws IOException {
         WindowManager.getInstance().backWindow() ;
     }
     
@@ -61,8 +61,8 @@ public class MyTestsController extends UserInterface {
     
     /** Metodo para voltar para a cena (Scene) (Informar Nota). */
     @FXML
-    public void addNewTest () throws IOException {
-        WindowManager.getInstance().changeWindow(new AddNewTestController()) ;
+    public void addNewEvaluation () throws IOException {
+        WindowManager.getInstance().changeWindow(new AddNewEvaluationController()) ;
     }
 }
 

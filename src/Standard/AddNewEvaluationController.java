@@ -5,12 +5,12 @@ import java.net.URL ;
 import java.util.ResourceBundle ;
 import javafx.fxml.FXML ;
 import javafx.scene.control.Button ;
+import javafx.scene.control.ChoiceBox ;
 import javafx.scene.control.Label ;
-import javafx.scene.control.SplitMenuButton ;
 import javafx.scene.control.TextField ;
 import javafx.scene.layout.AnchorPane ;
 
-public class AddNewTestController extends UserInterface {
+public class AddNewEvaluationController extends UserInterface {
 
     /** Elemento raiz (background). */
     @FXML
@@ -42,7 +42,7 @@ public class AddNewTestController extends UserInterface {
     
     /** Menu (Disciplina) .*/
     @FXML
-    private SplitMenuButton disciplineMenu ;
+    private ChoiceBox disciplineMenu ;
     
     /** Rotulo (Medias) .*/
     @FXML
@@ -50,7 +50,7 @@ public class AddNewTestController extends UserInterface {
     
     /** Menu (Medias) .*/
     @FXML
-    private SplitMenuButton averageMenu ;
+    private ChoiceBox averageMenu ;
     
     /** Botao (Voltar). */
     @FXML
@@ -63,8 +63,8 @@ public class AddNewTestController extends UserInterface {
     
     
     /** Passa para a classe pai uma string com o nome do arquivo FXML */
-    public AddNewTestController () {
-        super ("AddNewTest.fxml") ;
+    public AddNewEvaluationController () {
+        super ("AddNewEvaluation.fxml") ;
     }
     
     /** A classe (Initializable) possui um metodo abstrato (initialize) que deve ser implementado, 
@@ -74,15 +74,15 @@ public class AddNewTestController extends UserInterface {
     
     /** Metodo para voltar para a cena (Scene) (Minhas Avaliacoes). */
     @FXML 
-    public void backScreenMyTests () throws IOException {
+    public void backMyEvaluations () throws IOException {
         WindowManager.getInstance().backWindow() ;
     }
     
     /** Metodo para salvar os dados e em seguida voltar para a cena (Scene) (Minhas Avaliacoes). */
     @FXML
-    public void saveNewTest () throws IOException {
+    public void saveNewEvaluation () throws IOException {
         // a ser implementado ainda
-        backScreenMyTests() ;
+        backMyEvaluations() ;
     }
 }
 

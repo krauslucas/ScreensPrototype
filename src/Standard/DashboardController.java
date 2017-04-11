@@ -40,14 +40,14 @@ public class DashboardController extends UserInterface {
     
     /** Metodo para trocar para a cena (Scene) de (Meu Desempenho). */
     @FXML 
-    public void nextScreenMyPerformance () throws IOException {
+    public void nextMyPerformance () throws IOException {
         WindowManager.getInstance().changeWindow(new MyPerformanceController()) ;
     }
     
     /** Metodo para trocar para a cena (Scene) de (Minhas Avaliacoes). */
     @FXML 
-    public void nextScreenMyTests () throws IOException {
-        WindowManager.getInstance().changeWindow(new MyTestsController()) ;
+    public void nextMyTests () throws IOException {
+        WindowManager.getInstance().changeWindow(new MyEvaluationsController()) ;
     }
 }
 

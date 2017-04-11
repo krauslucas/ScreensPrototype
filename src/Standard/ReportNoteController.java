@@ -61,7 +61,7 @@ public class ReportNoteController extends UserInterface {
     
     /** Metodo para voltar para a cena (Scene) (Minhas Avaliacoes). */
     @FXML 
-    public void backScreenMyTests () throws IOException {
+    public void backMyEvaluations () throws IOException {
         WindowManager.getInstance().backWindow() ;
     }
     
@@ -69,7 +69,7 @@ public class ReportNoteController extends UserInterface {
     @FXML
     public void saveNote () throws IOException {
         // salvar os dados e em seguida voltar para a tela (Minhas Avaliacoes)
-        backScreenMyTests () ;
+        backMyEvaluations () ;
     }
 }
 
